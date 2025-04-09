@@ -16,7 +16,7 @@ type: "host",
 value: "nextjs-boilerplate.*",
 },
 ],
-destination: "https://www.google.com",
+destination: "/studio/:path*",
 },
       ];
     }
