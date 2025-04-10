@@ -13,7 +13,7 @@ export function middleware(request: NextRequest) {
   }
 
   // Only apply middleware to studio subdomain
-  if (request.nextUrl.host.startsWith('studio')) {
+  if (request.nextUrl.host.startsWith('nextjs-boilerplate')) {
     // If not authenticated, redirect to login page
     if (!isAuthenticated) {
       const url = request.nextUrl.clone()
