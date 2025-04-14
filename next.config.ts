@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
 source: "/studio/api/:path*",
 destination: "/api/:path*",
 },
+  
+
+              beforeFiles: [
         {
         source: "/",
         has: [
@@ -17,7 +20,10 @@ destination: "/api/:path*",
           },
         ],
         destination: "/studio/test",
-      },
+      }
+        
+        ],
+
 {
 source: "/:path*",
 has: [
