@@ -9,8 +9,9 @@ const nextConfig: NextConfig = {
           source: "/",
           destination: "/studio/test",
         },
-      ]
+      ],
+    }; // This closing bracket was missing
   }
-};
+}; // This closing bracket was also needed
 
 export default nextConfig;
