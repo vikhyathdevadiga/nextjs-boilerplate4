@@ -16,7 +16,7 @@ destination: "/api/:path*",
             value: "nextjs-boilerplate.*",
           },
         ],
-        destination: "/studio",
+        destination: "/studio/test",
       },
 {
 source: "/:path*",
