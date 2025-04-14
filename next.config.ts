@@ -8,6 +8,16 @@ const nextConfig: NextConfig = {
 source: "/studio/api/:path*",
 destination: "/api/:path*",
 },
+        {
+        source: "/",
+        has: [
+          {
+            type: "host",
+            value: "nextjs-boilerplate.*",
+          },
+        ],
+        destination: "/studio",
+      },
 {
 source: "/:path*",
 has: [
