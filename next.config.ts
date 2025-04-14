@@ -16,7 +16,9 @@ const nextConfig: NextConfig = {
             },
           ],
         },
-        // Redirect all paths to /studio/[path]
+      ],
+      afterFiles: [
+        // Redirect all paths to /studio/[path] only if the original path doesn't exist
         {
           source: "/:path*",
           destination: "/studio/:path*",
