@@ -19,7 +19,7 @@ const nextConfig: NextConfig = {
         // Redirect all paths to /studio/[path]
         {
           source: "/:path*",
-          destination: "/studio/test/:path*",
+          destination: "/studio/:path*",
           has: [
             {
               type: "host",
