@@ -8,10 +8,16 @@ const nextConfig: NextConfig = {
         {
           source: "/",
           destination: "/studio/test",
+          has: [
+            {
+              type: "host",
+              value: "nextjs-boilerplate.vercel-support.app",
+            },
+          ],
         },
       ],
-    }; // This closing bracket was missing
+    };
   }
-}; // This closing bracket was also needed
+};
 
 export default nextConfig;
