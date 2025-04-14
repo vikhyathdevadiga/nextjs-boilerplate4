@@ -5,9 +5,21 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
+        // Redirect root to /studio/test
         {
           source: "/",
           destination: "/studio/test",
+          has: [
+            {
+              type: "host",
+              value: "nextjs-boilerplate.vercel-support.app",
+            },
+          ],
+        },
+        // Redirect all paths to /studio/[path]
+        {
+          source: "/:path*",
+          destination: "/studio/:path*",
           has: [
             {
               type: "host",
