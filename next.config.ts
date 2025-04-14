@@ -6,34 +6,10 @@ const nextConfig: NextConfig = {
     return {
       beforeFiles: [
         {
-          source: "/:path*",
-          has: [
-            {
-              type: "host",
-              value: "nextjs-boilerplate.*",
-            },
-          ],
-          destination: "/studio/:path*",
-        }
-      ],
-      afterFiles: [
-        {
-          source: "/studio/api/:path*",
-          destination: "/api/:path*",
-        },
-             {
           source: "/",
-          has: [
-            {
-              type: "host",
-              value: "nextjs-boilerplate.*",
-            },
-          ],
           destination: "/studio/test",
         }
-      ],
-      fallback: []
-    };
+      ]
   }
 };
 
