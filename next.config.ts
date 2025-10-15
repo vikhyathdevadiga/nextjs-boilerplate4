@@ -33,5 +33,5 @@ const nextConfig: NextConfig = {
     };
   }
 };
-
+console.log(process.env)
 export default nextConfig;
