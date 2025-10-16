@@ -1,9 +1,12 @@
 {
   "version": 2,
   "builds": [{ "src": "next.config.js", "use": "@vercel/next" }],
+  "regions": ["cdg1", "fra1"],
+  "scope": "vercel-support",
+  "alias": ["nextjs-boilerplate.vercel-support.app", "vercel.nextjs-boilerplate.vercel-support.app"],
   "build": {
     "env": {
-      "BUGSNAG_API_KEY": "TEST"
+      "BUGSNAG_API_KEY": "API KEY"
     }
   }
 }
